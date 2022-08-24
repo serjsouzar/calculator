@@ -18,32 +18,32 @@
     <div class="background">
       <h1>sjz</h1>
       <div class="calculator">
-        <h2>Calculator</h2>
+        <h2>⚡ Calculator ⚡</h2>
         <p id="resultado"></p>
         <table>
           <tr>
             <td><button class="botao" id="symbols" onclick="clearNumber()">C</button></td>
-            <td><button class="botao" id="symbols"><</button></td>
-            <td><button class="botao" id="symbols">÷</button></td>
-            <td><button class="botao" id="symbols">x</button></td>
+            <td><button class="botao" id="symbols" onclick="backspace()">⌫</button></td>
+            <td><button class="botao" id="symbols" onclick="insertNumber('/')">÷</button></td>
+            <td><button class="botao" id="symbols"onclick="insertNumber('*')">x</button></td>
           </tr>
           <tr>
             <td><button class="botao" onclick="insertNumber('7')">7</button></td>
             <td><button class="botao" onclick="insertNumber('8')">8</button></td>
             <td><button class="botao" onclick="insertNumber('9')">9</button></td>
-            <td><button class="botao" id="symbols">-</button></td>
+            <td><button class="botao" id="symbols" onclick="insertNumber('-')">-</button></td>
           </tr>
           <tr>
             <td><button class="botao" onclick="insertNumber('4')">4</button></td>
             <td><button class="botao" onclick="insertNumber('5')">5</button></td>
             <td><button class="botao" onclick="insertNumber('6')">6</button></td>
-            <td><button class="botao" id="symbols">+</button></td>
+            <td><button class="botao" id="symbols"onclick="insertNumber('+')">+</button></td>
           </tr>
           <tr>
             <td><button class="botao" onclick="insertNumber('1')">1</button></td>
             <td><button class="botao" onclick="insertNumber('2')">2</button></td>
             <td><button class="botao" onclick="insertNumber('3')">3</button></td>
-            <td rowspan="2"><button class="botao" id="symbols" style="height: 106px;">=</button></td>
+            <td rowspan="2"><button class="botao" id="symbols" style="height: 106px;" onclick="calculate()">=</button></td>
           </tr>
           <tr>
             <td colspan="2">
@@ -51,7 +51,7 @@
               style="width: 106px;"
               onclick="insertNumber('0')"
               >0</button></td>
-            <td><button class="botao">.</button></td>
+            <td><button class="botao" onclick="insertNumber('.')">.</button></td>
           </tr>
         </table>
       </div>
